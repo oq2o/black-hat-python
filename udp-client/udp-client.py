@@ -6,6 +6,7 @@ target_port = 9997
 # create a socket object
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+# bind the socket to the target
 client.bind((target_host,target_port))
 
 # send some data
